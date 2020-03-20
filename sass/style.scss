@@ -1,0 +1,279 @@
+@import "./reset.scss";
+
+$break-small: 320px;
+$break-medium: 700px;
+$break-large: 1200px;
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/bgc.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center bottom;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $break-large) {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/bgc.png"), url("/column.svg");
+    background-repeat: no-repeat;
+    background-size: 35%, 180%;
+    background-position: left, left;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+header {
+  text-align: center;
+  margin-top: 5%;
+  h1 {
+    color: #f2a22c;
+    font-family: "Caesar Dressing", cursive;
+    font-size: 50px;
+    @media screen and (min-width: $break-large) {
+      font-size: 70px;
+    }
+  }
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  margin-top: 15%;
+  @media screen and (min-width: $break-large) {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+  }
+
+  form {
+    text-align: center;
+
+    input:first-child {
+      width: 25vw;
+      height: 3vw;
+      border: none;
+      border-bottom: 4px solid #f2a22c;
+      background-color: transparent;
+      font-size: 20px;
+      padding-left: 15px;
+      @media screen and (min-width: $break-large) {
+        width: 25vw;
+        height: 3vw;
+        border: none;
+        border-bottom: 4px solid #f2a22c;
+        background-color: transparent;
+        font-size: 20px;
+        padding-left: 15px;
+      }
+
+      &::placeholder {
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        padding-left: 2px;
+        @media screen and (min-width: $break-large) {
+          color: black;
+          font-weight: normal;
+          font-size: 20px;
+          padding-left: 2px;
+        }
+      }
+    }
+    input:nth-child(2) {
+      margin-left: 25px;
+      font-family: "Sen";
+      font-weight: bold;
+      border: 2px solid #f2a22c;
+      border-radius: 5px;
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.1s;
+      text-transform: uppercase;
+      @media screen and (min-width: $break-large) {
+        margin-left: 25px;
+        font-family: "Sen";
+        font-weight: bold;
+        border: 2px solid #f2a22c;
+        border-radius: 5px;
+        padding: 15px 40px;
+        font-size: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.1s;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: #f2a22c;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+.output {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: "Black Ops One", arial;
+  font-weight: normal;
+  color: #f2a22c;
+  margin-left: 30%;
+  margin-right: 30%;
+  @media screen and (min-width: $break-large) {
+  }
+  text-align: center;
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: "Black Ops One", arial;
+  font-weight: normal;
+  color: #f2a22c;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+ */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/bgc.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center bottom;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $break-medium) {
+    background-size: 50%;
+  }
+  @media screen and (min-width: $break-large) {
+    background-image: url("/bgc.png"), url("/column.svg");
+    background-repeat: no-repeat;
+    background-size: 35%, 180%;
+    background-position: left, left;
+  }
+}
+
+header {
+  text-align: center;
+  margin-top: 5%;
+  h1 {
+    color: #f2a22c;
+    font-family: "Caesar Dressing", cursive;
+    font-size: 50px;
+    @media screen and (min-width: $break-medium) {
+      font-size: 60px;
+    }
+    @media screen and (min-width: $break-large) {
+      font-size: 90px;
+    }
+  }
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  @media screen and (min-width: $break-large) {
+    margin-top: 15%;
+  }
+
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $break-large) {
+      flex-direction: row;
+    }
+    input:first-child {
+      width: 80vw;
+      height: 15vw;
+      border: none;
+      border-bottom: 4px solid #f2a22c;
+      background-color: transparent;
+      font-size: 20px;
+      padding-left: 15px;
+      margin-bottom: 10%;
+      @media screen and (min-width: $break-medium) {
+        width: 100%;
+        height: 5vw;
+        padding-left: 0;
+        margin-bottom: 10%;
+      }
+      @media screen and (min-width: $break-large) {
+        width: 25vw;
+        height: 3vw;
+        margin-right: 20px;
+      }
+
+      &::placeholder {
+        color: gray;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        @media screen and (min-width: $break-large) {
+          text-align: left;
+          font-size: 20px;
+          padding-left: 0px;
+        }
+      }
+    }
+    input:nth-child(2) {
+      width: 50vw;
+      font-family: "Sen";
+      font-weight: bold;
+      border: 2px solid #f2a22c;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 15px;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.1s;
+      text-transform: uppercase;
+      margin: 0 auto;
+      @media screen and (min-width: $break-medium) {
+        width: 70%;
+      }
+      @media screen and (min-width: $break-large) {
+        width: 30%;
+        height: 60%;
+        margin-left: 15px;
+        border-radius: 5px;
+        padding: 0px 0px;
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: #f2a22c;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+.output {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 25px;
+  font-family: "Black Ops One", arial;
+  font-weight: normal;
+  color: #f2a22c;
+  margin-left: 30%;
+  margin-right: 30%;
+  @media screen and (min-width: $break-medium) {
+    font-size: 30px;
+  }
+  @media screen and (min-width: $break-large) {
+  }
+  margin-top: 0%;
+  font-size: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
