@@ -116,12 +116,14 @@ q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after {
+blockquote:before,
+blockquote:after {
   content: "";
   content: none;
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -269,17 +271,17 @@ header {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("/bgc.png");
+  background-image: url("../bgc.png");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center bottom;
   overflow: hidden;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 700px) {
@@ -290,7 +292,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   body {
-    background-image: url("/bgc.png"), url("/column.svg");
+    background-image: url("../bgc.png"), url("../column.svg");
     background-repeat: no-repeat;
     background-size: 35%, 180%;
     background-position: left, left;
@@ -325,8 +327,8 @@ header h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10%;
 }
 
@@ -343,16 +345,16 @@ header h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1200px) {
   .password form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -418,16 +420,19 @@ header h1 {
     font-size: 20px;
     padding-left: 0px;
   }
+
   .password form input:first-child:-ms-input-placeholder {
     text-align: left;
     font-size: 20px;
     padding-left: 0px;
   }
+
   .password form input:first-child::-ms-input-placeholder {
     text-align: left;
     font-size: 20px;
     padding-left: 0px;
   }
+
   .password form input:first-child::placeholder {
     text-align: left;
     font-size: 20px;
@@ -493,4 +498,5 @@ header h1 {
     font-size: 30px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
